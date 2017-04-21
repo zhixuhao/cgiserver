@@ -101,7 +101,7 @@
 				}
 			});
       function addloading(text){
-        var $loading = $("<div id='loading'><img src = 'img/loading.gif'><p>"+ text +"</p></div>");
+        var $loading = $("<div id='loadingdiv'><div id='loadingbg'></div><div id='loading'><img src = 'img/loading.gif'><p>"+ text +"</p></div></div>");
         $("body").append($loading);
       }
       function removeloading(){
@@ -137,7 +137,7 @@
 			   });
 			});
       function callcgi(filename){
-        $("#processing").text("The image is being processed, please wait");
+        $("#processing").text("The image is being processed, please wait................");
         $.ajax({
             url:"http://www.csbio.sjtu.edu.cn/cgi-bin/cellcounting.cgi?" + filename,
             type:'GET',
