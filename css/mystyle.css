@@ -1,0 +1,122 @@
+html,body{
+	height: 100%;
+	position: relative;
+}
+.lighten{
+	color: #0099cc;
+}
+.flex{
+	display: flex;
+	align-items: center;
+}
+.container{
+	justify-content: space-between;
+	width: 80%;
+	margin: 0 auto;
+}
+.title{
+	font-size: 20px;
+}
+.logo{
+	font-size: 18px;
+}
+.navbar{
+	background: #f1f1f1;
+	margin-bottom: 0;
+}
+.img{
+	width: 40%;
+}
+.img_container{
+	width: 60%;
+	justify-content: space-around;
+	margin: 0 auto;
+}
+#dstimg{
+	padding: 15px;
+	background-image: url("../img/bgtexture.jpg");
+	background-repeat: repeat;
+	min-height: 30%;
+}
+#dstimg p{
+	padding: 10px;
+	font-size: 23px;
+	text-align: center;
+	color: white;
+
+}
+#dstimg .img_container{
+	margin-bottom: 20px;
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+}
+#dstimg .img_container img{
+	max-width: calc(45% - 10px);
+}
+.center{
+	justify-content: center;
+	display: flex;
+}
+#introduction{
+	background-image: url("../img/biobg.jpg");
+	padding: 20px;
+	text-align: center;
+	min-height: calc(70% - 52px);
+}
+.margin_bottom{
+	margin-bottom: 25px;
+}
+.formdiv{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+form{
+	width: 100%;
+}
+#upload{
+	display: none;
+}
+label{
+	margin-bottom: 0;
+}
+.typelimit{
+	width: 100%;
+	margin-top: 15px;
+	font-size: 20px;
+	color: white;
+}
+.inputitem{
+	margin: 0 10px;
+}
+#description{
+	width: 30%;
+	cursor: initial;
+	min-width: 200px;
+}
+.error{
+	color: red;
+}
+#loading{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 1001;
+	top: 0;
+	background: black;
+	opacity: 0.1;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+#loading img{
+
+}
+#loading p{
+	width: 100%;
+	font-size: 20px;
+	color: white;
+	margin-top: 20px;
+}

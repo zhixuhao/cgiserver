@@ -1,0 +1,6 @@
+    project(cellcounting)    
+    find_package(OpenCV REQUIRED)    
+    FILE(GLOB SRC_LIST "*.cpp")
+    add_executable(cellcounting.cgi ${SRC_LIST})    
+    target_link_libraries(cellcounting.cgi ${OpenCV_LIBS})    
+    cmake_minimum_required(VERSION 2.8)  

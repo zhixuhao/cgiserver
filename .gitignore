@@ -1,0 +1,4 @@
+file/*
+cellcounting/CMakeFiles/*
+cellcounting/file/*
+cellcounting/results/*
