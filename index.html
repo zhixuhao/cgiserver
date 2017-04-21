@@ -115,6 +115,7 @@
 				}
 				formData.append('curtime',new Date().getTime());
         addloading("file uploading...");
+        $("#submit_button").attr("disabled","disabled");
 				$.ajax({
 				    url:'./upload.php',
 				    type:'POST',
@@ -148,12 +149,14 @@
               $("#description").val("");
               $("#dstimg").empty().html("<p>The results will be displayed here</p>" + data);
               $("#processing").html("The results will be displayed here");
+              $("#submit_button").attr("disabled",false);
             },
             error:function(){
               $("#upload").val("");
               $("#description").val("");
               $("#dstimg").empty().html("some error occured");
               $("#processing").remove();
+              $("#submit_button").attr("disabled",false);
             }
          })
       }
